@@ -116,9 +116,16 @@ monitored_conditions:
       description: Displays the used space of the volume as a percentage (creates a new entry for each volume).
 {% endconfiguration %}
 
+### Administrator account
+The user has to be an administrator of qnap in order to properly work
+
 ### Self-signed certificates
 
 If your QNAP device uses self-signed certificates, set the `verify_ssl` option to `false`.
+
+### Two-factor Authentication
+
+In order to the sensor to work properly the two-factor authentication has to be disabled
 
 ### QNAP device support:
 
@@ -131,5 +138,6 @@ This integration has been tested on the following devices:
 - TS-451 (QTS 4.2.2)
 - TS-470 (QTS 4.2.2)
 - TS-639 (QTS 4.2.3)
+- TS-251+ (QTS 4.5.1)
 
 Other QNAP NAS devices using similar firmware should work fine. For more information about supported devices, or to report issues with your device, please visit the [qnapstats project](https://github.com/colinodell/python-qnapstats#device-support).
